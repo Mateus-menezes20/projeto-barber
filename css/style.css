@@ -1,0 +1,353 @@
+body {
+    background-image: url('../img/thumb-1920-691822.jpg'); /* Imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.titulo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.titulo img {
+    width: 130px; /* Tamanho da imagem da logo */
+    height: auto;
+    z-index: 1;
+}
+
+.links {
+    position: absolute; /* Permite mover a posição do elemento */
+    top: 20px; /* Distância do topo */
+    right: 20px; /* Distância da borda direita */
+    display: flex; /* Usado para alinhar os links em uma linha */
+    flex-direction: row; /* Alinha os links na horizontal */
+    gap: 10px; /* Espaçamento entre os botões */
+}
+
+.links a {
+    display: inline-block; /* Faz com que os links apareçam como botões */
+    padding: 10px 20px; /* Espaçamento dentro do "botão" */
+    background-color: #333; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado do link */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 18px; /* Tamanho da fonte */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+.links a:hover {
+    background-color: #4d4d4d; /* Cor de fundo ao passar o mouse (efeito hover) */
+}
+
+/* Caixa de informações */
+.caixa-informacoes {
+    width: 80%; /* Largura da caixa, ajustável */
+    max-width: 900px; /* Largura máxima */
+    margin: 20px auto; /* Alinhamento centralizado */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Cor de fundo com transparência */
+    color: white;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para dar destaque */
+}
+
+.caixa-informacoes h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.caixa-informacoes p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.caixa-informacoes {
+    position: absolute;
+    top: 200px;
+    left: 300px;
+}
+
+.video-container {
+    width: 40%; /* Largura ajustável */
+    max-width: 1000px;
+    margin: 20px auto; /* Centraliza o vídeo */
+}
+
+video {
+    width: 100%; /* Faz o vídeo ocupar toda a largura da caixa */
+    border-radius: 50px; /* Borda arredondada para o vídeo */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra ao redor do vídeo */
+}
+
+.video-container {
+    position: absolute;
+    top: 500px;
+    left: 450px;
+}
+
+/* Ajuste na posição da localização, agora abaixo do vídeo */
+.localizaçao {
+    position: absolute;
+    top: 1010px; /* Ajustado para ficar abaixo do vídeo */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza a caixa horizontalmente */
+    width: 80%;
+    max-width: 790px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Cor de fundo com transparência */
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.localizaçao img {
+    width: 100%; /* Faz a imagem ocupar toda a largura da caixa */
+    height: auto;
+    border-radius: 10px;
+}
+
+.faixa {
+    position: absolute; /* Usa a posição absoluta para definir a posição na página */
+    top: 1400px; /* Mova a faixa para baixo, ajustando conforme necessário */
+    left: 21%; /* Alinha a faixa à esquerda */
+    width: 60%; /* Faz com que a faixa ocupe toda a largura */
+    height: 60px; /* Altura da faixa, ajustável conforme necessário */
+    border-radius: 50px;
+}   
+
+.faixa img {
+    width: 100%; /* A imagem ocupa toda a largura da faixa */
+    height: 100%; /* A altura da imagem é ajustada à altura da faixa */
+    object-fit: cover; /* A imagem será redimensionada para cobrir a faixa */
+}
+
+.redes {
+    position: absolute;
+    top: 1405px;
+    left: 570px;
+}
+
+
+
+
+/* Espaço entre a caixa de informações e as imagens */
+.cabelo,
+.cabelo-barba {
+    display: inline-block;
+    width: 30%; /* Ajuste a largura das imagens */
+    margin: 20px 10px 20px 10px; /* Ajuste o espaço ao redor das imagens */
+    text-align: center;
+    position: relative; /* Adiciona posição relativa para permitir ajustes com top/bottom */
+    transition: transform 0.3s ease; /* Transição suave para o aumento da imagem */
+}
+
+/* Para mover as imagens para cima ou para baixo */
+.cabelo {
+    margin-top: 500px; /* Ajuste a posição para cima ou para baixo */
+}
+
+.cabelo-barba {
+    margin-top: 500px; /* Ajuste a posição para cima ou para baixo */
+}
+
+/* Ajuste do tamanho das imagens */
+.cabelo img,
+.cabelo-barba img {
+    width: 50%; /* Diminui o tamanho das imagens */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra nas imagens */
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, border 0.3s ease; /* Transição para aumentar e adicionar borda */
+}
+
+/* Efeito de aumento ao passar o mouse */
+.cabelo:hover img,
+.cabelo-barba:hover img {
+    transform: scale(1.1); /* Aumenta o tamanho da imagem em 10% */
+}
+
+
+
+/* Caixa de informações dentro de cada imagem */
+.caixa-info {
+    background-color: rgba(254, 254, 254, 0);
+    color: rgba(255, 255, 255, 0);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0);
+}
+
+.caixa-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.caixa-info p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+
+
+
+
+.caixa-con{
+    position: absolute;
+    top: 1405px;
+    left: 720px;
+}
+
+
+
+
+/* Estilo dos botões */
+.horarios-botoes {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre os botões */
+    margin-bottom: 30px;
+}
+
+.btn-horario {
+    background-color: #333;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-horario:hover {
+    background-color: #4d4d4d;
+}
+
+/* Altera a cor quando o botão é clicado */
+.btn-horario:active {
+    background-color: #2c2c2c; /* Cor escura ao ser pressionado */
+}
+
+/* Caixa de informações dos horários */
+.caixa-horarios {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.caixa-horarios p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+.comentarios-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Ajuste para garantir que a caixa de comentários fique abaixo da caixa de informações */
+    margin-bottom: 20px;
+    max-width: 500px; /* Define um tamanho fixo para a caixa de comentários */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.comentario-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    margin-bottom: 10px;
+    resize: vertical;
+    max-height: 500px; /* Limita a altura da caixa de comentários */
+}
+
+.comentarios-list {
+    margin-top: 20px;
+}
+
+.comentario {
+    background-color: #070707;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comentario p {
+    margin: 0;
+}
+
+.comentario-footer {
+    font-size: 12px;
+    color: #000000;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+
+/* Estilizando a seção de produtos */
+.produtos-container {
+    display: flex;
+    flex-direction: column; /* Organiza os produtos um abaixo do outro */
+    align-items: center; /* Centraliza os produtos */
+    gap: 15px; /* Espaço entre as imagens */
+    margin-top: 20px;
+}
+
+/* Estilização das imagens dos produtos */
+.produto img {
+    width: 800px;                         
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3); /* Adiciona sombra para destaque */
+    transition: transform 0.3s ease-in-out;
+}
+
+.caixa-info{
+    position: relative;
+    left: 500px;
+    width: 30%;
+
+}
+
+
